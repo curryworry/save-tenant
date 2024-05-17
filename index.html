@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tenant Review Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="location-container">
+    <p id="location-message"></p>
+    <button id="confirm-location">Yes</button>
+    <button id="change-location">No</button>
+    <select id="country-select" style="display: none;"></select>
+  </div>
+  <div id="options-container" style="display: none; text-align: center;">
+    <button id="post-experience">Post an Experience</button>
+    <button id="browse-experiences">Browse Experiences</button>
+  </div>
+  <div id="post-experience-form" style="display: none;">
+    <h2>Post an Experience</h2>
+    <form id="experience-form">
+      <label for="postal-code">Postal Code:</label>
+      <input type="text" id="postal-code" name="postal-code" required>
+
+      <label for="unit-number">Unit Number:</label>
+      <input type="text" id="unit-number" name="unit-number" required>
+
+      <label for="floor-number">Floor Number:</label>
+      <input type="text" id="floor-number" name="floor-number" required>
+
+      <label for="tenancy-start-date">Tenancy Start Date:</label>
+      <input type="date" id="tenancy-start-date" name="tenancy-start-date" required>
+
+      <label for="tenancy-end-date">Tenancy End Date:</label>
+      <input type="date" id="tenancy-end-date" name="tenancy-end-date" required>
+
+      <label for="landlord-name">Landlord Name:</label>
+      <input type="text" id="landlord-name" name="landlord-name" required>
+
+      <label for="agent-name">Agent Name:</label>
+      <input type="text" id="agent-name" name="agent-name">
+
+      <label for="comments">Comments:</label>
+      <textarea id="comments" name="comments"></textarea>
+
+      <label for="rating">Rating:</label>
+      <div id="rating-stars">
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+      </div>
+      <input type="hidden" id="rating" name="rating" value="0">
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+#location-container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  #country-select {
+    margin-top: 10px;
+  }
+  
+  #options-container {
+    margin-top: 30px;
+  }
+  
+  #options-container button {
+    margin: 0 10px;
+  }
+  
+  #post-experience-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #post-experience-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  #post-experience-form input[type="text"],
+  #post-experience-form input[type="date"],
+  #post-experience-form textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  #rating-stars {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    text-align: left;
+  }
+  
+  #rating-stars .star {
+    color: #ccc;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  #rating-stars .star.active,
+  #rating-stars .star:hover ~ .star {
+    color: gold;
+  }
